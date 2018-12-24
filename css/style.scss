@@ -46,7 +46,8 @@ img{
 }
 
 // ======== Responsive ================
-
+.col04{width: 260px;}
+.col03{width: 353.33px;}
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -60,25 +61,35 @@ img{
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 	.container{
-	  width: 1125px;
+	  width: 1120px;
 	  margin: 0 auto;
+	  .col04, .col03{
+		float: left;
+		display: inline-block;
+		margin: 10px;
+	  }
 	}
   @media (min-width: 1025px) and (max-width: 1280px) {
 	.container{
-	  width: 1025px;
+	  width: 1024px;
 	 
 	}
-	
+	.col04{width: 236px;}
+	.col03{width: 321.33px;}
   }
   
   
   @media (min-width: 768px) and (max-width: 1024px) {
 	.container{width: 768px; }
+	.col04{width: 172px;}
+	.col03{width: 236px;}
   }
   
   
   @media (min-width: 481px) and (max-width: 767px) {
 	.container{width: 480px;}
+	.col04{width: 100%;}
+	.col03{width: 100%;}
 	#header{
 		height: 150px !important; text-align: center;
 		li{
@@ -117,8 +128,10 @@ img{
 
   @media (min-width: 320px) and (max-width: 480px) {
    .container{
-	  width: 330px;
+	  width: 300px;
 	}
+	.col04{width: 100%;}
+	.col03{width: 100%;}
 	#header{
 		height: 150px !important; text-align: center;
 		li{
@@ -291,16 +304,19 @@ h6{
 		border-bottom: 1px solid #dde1e4;
 	}
 }
-.col-12 h3{
-	font-size: 26px;
-	font-weight: 100;
-	margin-top: 80px;
-	margin-bottom: 60px;
-	display: inline-block;
-	border-left: 10px solid #e1e6ea;
-	padding-left: 10px;
-
-}
+.col-12{
+	margin: 10px;
+	h3{
+		font-size: 26px;
+		font-weight: 100;
+		margin-top: 80px;
+		margin-bottom: 60px;
+		display: inline-block;
+		border-left: 10px solid #e1e6ea;
+		padding-left: 10px;
+	
+	}
+} 
 .team{
 	
 	.info-team{
@@ -380,12 +396,9 @@ h6{
 	height: auto;
 	h3{color: #fff;}
 	.block{
-		display: inline-block;
-		float: left;
 		line-height: 0px;
 		cursor: pointer;
 		position: relative;
-		margin: 15px 0px;
 		&:hover{
 			.info{
 				visibility: visible;
@@ -431,6 +444,60 @@ h6{
 					padding-top: 32px;
 					padding-left: 20px;
 				}
+			}
+		}
+	}
+	.container{    overflow: hidden;}
+	.show{
+		text-align: center;
+		clear: both;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		a{
+			border: 2px solid #fff;
+			border-radius: 5px;
+			color: #fff;
+			padding: 8px 10px 5px 10px;
+		}
+	}
+}
+.we-do{
+	.content{
+		.block{
+			text-align: center;
+			i{
+				font-size: 35px;
+				color: #23b7a4;
+				margin-bottom: 20px;
+			}
+			h4{
+				font-size: 20px;
+				font-weight: 100;
+			}
+			p{
+				color: #b0b1b3;
+			}
+		}
+	}
+}
+.features{
+	clear: both;
+    overflow: auto;
+	background: #3a454d;
+	padding-bottom: 90px;
+	h3{
+		color: #fff;
+	}
+	.content{
+		.block{
+			h4{
+				font-size: 18px;
+				font-weight: 100;
+				margin-top: 20px;
+				color: #fff;
+			}
+			p{
+				color: #dcdfe1;
 			}
 		}
 	}
