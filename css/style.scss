@@ -48,6 +48,7 @@ img{
 // ======== Responsive ================
 .col04{width: 260px;}
 .col03{width: 353.33px;}
+.col02{width: 540px; }
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -63,7 +64,7 @@ img{
 	.container{
 	  width: 1120px;
 	  margin: 0 auto;
-	  .col04, .col03{
+	  .col04, .col03, .col02{
 		float: left;
 		display: inline-block;
 		margin: 10px;
@@ -76,6 +77,7 @@ img{
 	}
 	.col04{width: 236px;}
 	.col03{width: 321.33px;}
+	.col02{width: 492px;}
   }
   
   
@@ -83,6 +85,7 @@ img{
 	.container{width: 768px; }
 	.col04{width: 172px;}
 	.col03{width: 236px;}
+	.col02{width: 364px;}
   }
   
   
@@ -90,6 +93,7 @@ img{
 	.container{width: 480px;}
 	.col04{width: 100%;}
 	.col03{width: 100%;}
+	.col02{width: 100%;}
 	#header{
 		height: 150px !important; text-align: center;
 		li{
@@ -132,8 +136,9 @@ img{
 	}
 	.col04{width: 100%;}
 	.col03{width: 100%;}
+	.col02{width: 100%;}
 	#header{
-		height: 150px !important; text-align: center;
+		height: 200px !important; text-align: center;
 		li{
 			margin: 10px 5px;
 		}
@@ -499,6 +504,84 @@ h6{
 			p{
 				color: #dcdfe1;
 			}
+		}
+	}
+}
+.map{
+	overflow: -webkit-paged-y;
+    height: auto;
+	.form-info{
+		.form{
+			position: relative;
+			form{
+				background: #fff;
+				position: absolute;
+				top: -100px;
+				label{
+					text-transform: uppercase;
+					color: #8d8f92;
+					
+				}
+				padding: 20px;
+				.sol{
+					width: 90%;
+						height: 30px;
+					background: #e1e6ea;
+					border: 1px solid #e1e6ea;
+				}
+				.full-name{
+					margin-bottom: 20px;
+					overflow: hidden;
+					.init{
+						display: inline-block;
+						vertical-align: top;
+						float: left;
+						margin-top: 10px;
+					}
+				}
+				.message{
+					textarea{
+						width: 94%;
+						background: #e1e6ea;
+						border: 1px solid #e1e6ea;
+					}
+				}
+				input[type="submit"]{
+					background: #23b7a4;
+					border: 1px solid #23b7a4;
+					width: 150px;
+					height: 40px;
+					border-radius: 5px;
+					color: #fff;
+					font-weight: 700;
+					cursor: pointer;
+					margin-top: 20px;
+				}
+			}
+			
+		}
+		.info{
+			h3{
+				font-weight: 100;
+			}
+			p{
+				color:  #8d8f92;
+			}
+		}
+	}
+}
+.footer{
+	background: #3a454d;
+	overflow: hidden;
+	.block-info{
+		line-height: 3;
+		color: #fff;
+	}
+	.contact{
+		line-height: 5;
+		ul{
+			overflow: hidden;
+			float: right;
 		}
 	}
 }

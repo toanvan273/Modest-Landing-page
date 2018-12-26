@@ -44,6 +44,9 @@ img {
 .col03 {
   width: 353.33px; }
 
+.col02 {
+  width: 540px; }
+
 .col-1 {
   width: 8.33%; }
 
@@ -83,7 +86,7 @@ img {
 .container {
   width: 1120px;
   margin: 0 auto; }
-  .container .col04, .container .col03 {
+  .container .col04, .container .col03, .container .col02 {
     float: left;
     display: inline-block;
     margin: 10px; }
@@ -94,7 +97,9 @@ img {
   .col04 {
     width: 236px; }
   .col03 {
-    width: 321.33px; } }
+    width: 321.33px; }
+  .col02 {
+    width: 492px; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .container {
@@ -102,7 +107,9 @@ img {
   .col04 {
     width: 172px; }
   .col03 {
-    width: 236px; } }
+    width: 236px; }
+  .col02 {
+    width: 364px; } }
 
 @media (min-width: 481px) and (max-width: 767px) {
   .container {
@@ -110,6 +117,8 @@ img {
   .col04 {
     width: 100%; }
   .col03 {
+    width: 100%; }
+  .col02 {
     width: 100%; }
   #header {
     height: 150px !important;
@@ -147,8 +156,10 @@ img {
     width: 100%; }
   .col03 {
     width: 100%; }
+  .col02 {
+    width: 100%; }
   #header {
-    height: 150px !important;
+    height: 200px !important;
     text-align: center; }
     #header li {
       margin: 10px 5px; }
@@ -449,3 +460,60 @@ h6.line {
     color: #fff; }
   .features .content .block p {
     color: #dcdfe1; }
+
+.map {
+  overflow: -webkit-paged-y;
+  height: auto; }
+  .map .form-info .form {
+    position: relative; }
+    .map .form-info .form form {
+      background: #fff;
+      position: absolute;
+      top: -100px;
+      padding: 20px; }
+      .map .form-info .form form label {
+        text-transform: uppercase;
+        color: #8d8f92; }
+      .map .form-info .form form .sol {
+        width: 90%;
+        height: 30px;
+        background: #e1e6ea;
+        border: 1px solid #e1e6ea; }
+      .map .form-info .form form .full-name {
+        margin-bottom: 20px;
+        overflow: hidden; }
+        .map .form-info .form form .full-name .init {
+          display: inline-block;
+          vertical-align: top;
+          float: left;
+          margin-top: 10px; }
+      .map .form-info .form form .message textarea {
+        width: 94%;
+        background: #e1e6ea;
+        border: 1px solid #e1e6ea; }
+      .map .form-info .form form input[type="submit"] {
+        background: #23b7a4;
+        border: 1px solid #23b7a4;
+        width: 150px;
+        height: 40px;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
+        margin-top: 20px; }
+  .map .form-info .info h3 {
+    font-weight: 100; }
+  .map .form-info .info p {
+    color: #8d8f92; }
+
+.footer {
+  background: #3a454d;
+  overflow: hidden; }
+  .footer .block-info {
+    line-height: 3;
+    color: #fff; }
+  .footer .contact {
+    line-height: 5; }
+    .footer .contact ul {
+      overflow: hidden;
+      float: right; }
